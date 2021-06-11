@@ -1,0 +1,29 @@
+{
+  "name": "node-server",
+  "version": "1.0.0",
+  "description": "node sample server",
+  "main": "server.js",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "convict": "^6.1.0",
+    "convict-format-with-validator": "^6.0.1",
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test ",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavanMakadia/node-server.git"
+  },
+  "author": "PavanMakadia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavanMakadia/node-server/issues"
+  },
+  "homepage": "https://github.com/PavanMakadia/node-server#readme"
+}
