@@ -1,3 +1,7 @@
 {
-    "port": 9000
+    "server": {
+        "port": 9000,
+        "enableHttpLogging": true,
+        "enableCompression": true
+    }
 }

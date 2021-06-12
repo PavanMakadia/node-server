@@ -10,18 +10,32 @@ var config = convict({
         env: 'NODE_ENV',
         arg: 'env'
     },
-    ip: {
-        doc: 'The IP address to bind.',
-        format: 'ipaddress',
-        default: '127.0.0.1',
-        env: 'IP_ADDRESS',
-    },
-    port: {
-        doc: 'The port to bind.',
-        format: 'port',
-        default: 9000,
-        env: 'PORT',
-        arg: 'port'
+    server: {
+        port: {
+            doc: 'The port to bind.',
+            format: 'port',
+            default: 9000,
+            env: 'PORT',
+            arg: 'port'
+        },
+        ip: {
+            doc: 'The IP address to bind.',
+            format: 'ipaddress',
+            default: '127.0.0.1',
+            env: 'IP_ADDRESS',
+        },
+        enableHttpLogging: {
+            doc: 'Enable http request logging',
+            format: Boolean,
+            default: true,
+            env: 'HTTP_LOGGING'
+        },
+        enableCompression: {
+            doc: 'Enable Compression',
+            format: Boolean,
+            default: true,
+            env: 'COMPRESSION'
+        }
     },
     db: {
         host: {
@@ -42,10 +56,10 @@ var config = convict({
         default: null
     },
     secret: {
-      doc: 'Secret used for session cookies and CSRF tokens',
-      format: '*',
-      default: '',
-      sensitive: true
+        doc: 'Secret used for session cookies and CSRF tokens',
+        format: '*',
+        default: '',
+        sensitive: true
     }
 });
 
