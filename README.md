@@ -1,17 +1,17 @@
 # node-server
 
-## NodeJs Simple Application 
+### NodeJs Simple Application 
 
-Install Dependencies
+#### Install Dependencies
     npm install
 
-Start Application with
+#### Start Application with
     node server --env development
 
-## To Run With Docker
+### To Run With Docker
 
-Build the image    
-    Docker build -t node-server:v1 .
+#### Build the image    
+Docker build -t node-server:v1 .
 
-Run the Container
+#### Run the Container
     Docker run -p 9000:9000 -it node-server:v1
