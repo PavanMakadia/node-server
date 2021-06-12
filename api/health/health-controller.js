@@ -13,8 +13,8 @@ const _health = (req, res) => {
         }
         else {
             return res.status(500).send({
-                code: 2000,
-                messageKey: constants.messageKeys.code_2000,
+                code: 5003,
+                messageKey: constants.messageKeys.code_5003,
                 data: JSON.stringify(resolve)
             });
         }
