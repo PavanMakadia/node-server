@@ -11,7 +11,7 @@
 ### To Run With Docker
 
 #### Build the image    
-Docker build -t node-server:v1 .
+    Docker build -t node-server:v1 .
 
 #### Run the Container
     Docker run -p 9000:9000 -it node-server:v1
